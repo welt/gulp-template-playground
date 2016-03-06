@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/print.css">
+	<!--endbuild-->
+
+  </head>
+  <body>
+    <div class="container">
+
+      <nav>
+        <ul class="nav nav-pills pull-right">
+          <li {% if page.nav == "home"%}class="active"{% endif%}>
+            <a href="/">Home</a>
+          </li>
+          <li {% if page.nav == "moto"%}class="active"{% endif%}>
+            <a href="/moto.html">Moto</a>
+          </li>
+          <li {% if page.nav == "daboom"%}class="active"{% endif%}>
+            <a href="/daboom.html">Da Boom</a>
+          </li>
+        </ul>
+        <h3 class="text-muted">{{ site.title }}</h3>
+      </nav>
+
+      {% block content %}{% endblock %}
+
+    </div>
+
+	<!--build:js js/main.min.js -->
+	<script src="js/lib/a-library.js"></script>
+	<script src="js/lib/another-library.js"></script>
+	<script src="js/main.js"></script>
+	<!-- endbuild -->
+
+  </body>
+</html>
