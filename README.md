@@ -14,3 +14,7 @@ ______
 [example of gulp handlebars](http://enehana.nohea.com/general/using-handlebars-js-templates-as-precompiled-js-files/)
 
 [sane gulp handlebars?](https://github.com/shannonmoeller/gulp-hb)
+
+[gulp compile handlebars](https://github.com/jgatjens/gulp-webapp-hbs)
+
+[gulp compile handlebars](https://github.com/folkhack/holygrail-gulp-hb)
